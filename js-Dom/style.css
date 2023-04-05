@@ -1,0 +1,119 @@
+.query-btn {
+    padding: .5vh 1vw;
+    margin-right: 2vw;
+}
+
+small {
+    color: red;
+    font-size: 12px;
+    margin-left: 2vw;
+}
+
+.h1-container {
+    /* border: 1px solid; */
+    text-align: center;
+}
+
+.body-movie {
+    margin-top: 2vh;
+    display: flex;
+    width: 100%;
+
+}
+
+.body-movie>div {
+    border: 1px solid rgb(207, 207, 207);
+    text-align: center;
+    height: 78vh;
+    width: 100%;
+}
+
+.body-movie>div h2 {
+    border-bottom: 1px solid rgb(207, 207, 207);
+    padding-bottom: 1vh;
+    height: 8%;
+}
+
+.body-movie>div p {
+    border-top: 1px solid rgb(207, 207, 207);
+    height: 7%;
+    padding-top: 1.5vh;
+}
+
+.body-movie>div img {
+    height: 68%;
+    /* width: 50%; */
+    max-width: 100%;
+    /* border: 1px solid blue; */
+}
+
+/* table */
+table {
+    width: 100%;
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+th {
+    height: 30px;
+    border-bottom: 1px solid;
+    border-left: 1px solid white;
+    text-align: left;
+    padding-left: 5px;
+    background-color: rgb(176, 142, 209);
+    color: black;
+}
+
+td {
+    padding-left: 5px;
+    border-bottom: 1px solid;
+    word-wrap: break-word;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.caption {
+    font-size: 13px;
+    text-align: center;
+    font-style: italic;
+    color: rgb(78, 77, 77);
+}
+
+/* media queries */
+/* Styles for medium-sized mobile devices */
+@media screen and (max-width: 481px) {
+    input{
+        margin-top: 1vh;
+    }
+    h1{
+        font-size: 16px;
+    }
+    .body-movie>div {
+        border: 1px solid rgb(207, 207, 207);
+        text-align: center;
+        height:fit-content ;
+        width: 100%;
+    }
+    
+    .body-movie>div h2 {
+        border-bottom: 1px solid rgb(207, 207, 207);
+        padding-bottom: 1vh;
+        height: 8%;
+        font-size: 13px;
+    }
+    
+    .body-movie>div p {
+        border-top: 1px solid rgb(207, 207, 207);
+        height: 5vh;
+        padding-top: 1.5vh;
+        font-size: 12px;
+    }
+    
+    .body-movie>div img {
+        height: 38%;
+        /* width: 50%; */
+        max-width: 100%;
+    }
+}
