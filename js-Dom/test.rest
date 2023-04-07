@@ -1,0 +1,7 @@
+GET https://csunix.mohawkcollege.ca/~adams/10259/a6_responder.php
+
+###
+GET https://csunix.mohawkcollege.ca/~adams/10259/a6_responder.php?choice=mario
+
+###
+POST  https://csunix.mohawkcollege.ca/~adams/10259/a6_responder.php?choice=starwars
