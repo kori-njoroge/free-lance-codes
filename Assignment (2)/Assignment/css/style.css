@@ -128,14 +128,14 @@ nav a {
 	background-color: transparent;
 	color: white;
 	border-radius: 3px;
-	border: 1px solid ;
+	border: 1px solid;
 	font-size: 16px;
 	font-weight: 600;
 	transition: .3s ease-in-out;
 
 }
 
-.content button:hover{
+.content button:hover {
 	background-color: yellow;
 	border: 1px solid black;
 	color: black;
@@ -149,10 +149,12 @@ footer {
 	text-align: center;
 	padding: 20px;
 }
-.medias{
+
+.medias {
 	margin-bottom: 1vh;
 }
-.medias i{
+
+.medias i {
 	background-color: yellow;
 	color: black;
 	padding: 1vh;
@@ -161,11 +163,87 @@ footer {
 	margin: 0vh .2vw;
 }
 
+/* TOURS PAGE STYLES */
+.tours-body {
+	/* background-color: #ccc; */
+	background-color: black;
+	color: white;
+}
+
 #p-6 {
-	background-color: #ccc;
+	background-color: transparent;
 	text-align: center;
-	position: relative;
 	font-style: normal;
+}
+
+#p-6>h2 {
+	color: yellow;
+	margin-bottom: 2vh;
+	font-weight: 600;
+	font-size: 40px;
+}
+
+#p-6>h2:hover {
+	color: white;
+}
+
+#p-6 div {
+	width: 70%;
+	text-align: left;
+	height: max-content;
+	margin-top: 3%;
+}
+
+#p-6 div>p:hover {
+	color: yellow;
+}
+
+#p-6 div>p {
+	font-size: 1.2rem;
+	line-height: 5vh;
+}
+
+#p-6 div button {
+	padding: 1.5vh 3vw;
+	font-size: 14px;
+	font-weight: 600;
+	border-radius: 5px;
+	background-color: yellow;
+	border: none;
+	cursor: pointer;
+	transition: transform 0.3s ease;
+}
+
+#p-6 div button:hover {
+	color: yellow;
+	background-color: transparent;
+	border: 1px solid yellow;
+	border-radius: 5px;
+	transform: scale(1.1);
+}
+
+.tour-hr {
+	width: 60%;
+	border: none;
+	border-bottom: .1vh solid;
+	margin: 15vh auto;
+}
+
+.cont-container {
+	margin: 3vh;
+	display: flex;
+	padding: 0vh 10vw;
+}
+
+.cont-container img {
+	width: 60%;
+	border-radius: 8px;
+	margin: 0vh 3vw;
+	transition: transform 0.3s ease;
+}
+
+.cont-container img:hover {
+	transform: scale(1.1);
 }
 
 #who {
@@ -186,14 +264,6 @@ h5 {
 	text-align: center;
 }
 
-
-*,
-*:before,
-*:after {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
 
 .column {
 	float: left;
