@@ -4,7 +4,8 @@ const data = {
         label: 'Number of Tourists',
         data: [100, 120, 150, 200, 250, 300, 350, 400, 450, 500, 550, 600],
         backgroundColor: 'rgba(54, 162, 235, 0.2)',
-        borderColor: 'rgba(54, 162, 235, 1)',
+        // borderColor: 'rgba(54, 162, 235, 1)',
+        borderColor: 'rgba(54, 262, 235, 1)',
         borderWidth: 1
     }]
 };
