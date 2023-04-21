@@ -35,6 +35,9 @@ nav a {
 	text-decoration: none;
 }
 
+.nav-icon{
+	visibility: hidden;
+}
 
 #hero {
 	background-color: #eee;
@@ -165,7 +168,6 @@ footer {
 
 /* TOURS PAGE STYLES */
 .tours-body {
-	/* background-color: #ccc; */
 	background-color: black;
 	color: white;
 }
@@ -203,7 +205,8 @@ footer {
 	line-height: 5vh;
 }
 
-#p-6 div button {
+#p-6 div button,
+.container button {
 	padding: 1.5vh 3vw;
 	font-size: 14px;
 	font-weight: 600;
@@ -214,19 +217,13 @@ footer {
 	transition: transform 0.3s ease;
 }
 
-#p-6 div button:hover {
+#p-6 div button:hover,
+.container button:hover {
 	color: yellow;
 	background-color: transparent;
 	border: 1px solid yellow;
 	border-radius: 5px;
 	transform: scale(1.1);
-}
-
-.tour-hr {
-	width: 60%;
-	border: none;
-	border-bottom: .1vh solid;
-	margin: 15vh auto;
 }
 
 .cont-container {
@@ -246,18 +243,13 @@ footer {
 	transform: scale(1.1);
 }
 
-#who {
-	background-color: #eee;
-	text-align: center;
+
+.tour-hr {
+	width: 60%;
+	border: none;
+	border-bottom: .1vh solid;
+	margin: 15vh auto;
 }
-
-h5 {
-	font-weight: bold;
-	color: #131111;
-	font-size: 40px;
-}
-
-
 
 #team {
 	background-color: #ab9d9d;
@@ -265,30 +257,11 @@ h5 {
 }
 
 
-.column {
-	float: left;
-	width: 50%;
-	margin-bottom: 16px;
-	padding: 0 8px;
-}
-
 @media screen and (max-width: 650px) {
 	.column {
 		width: 100%;
 		display: block;
 	}
-}
-
-.card {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.container {
-	padding: 0 16px;
-	grid-template-columns: 200px 200px;
-	grid-row: auto auto;
-	grid-column-gap: 20px;
-	grid-row-gap: 20px;
 }
 
 .container::after,
@@ -369,5 +342,148 @@ h5 {
 
 	100% {
 		opacity: 0;
+	}
+}
+
+/* ABOUT PAGE STYLES */
+.about-body {
+	background-color: black;
+}
+
+.about-body h5 {
+	color: yellow;
+	font-size: 1.9rem;
+	margin: 0;
+}
+
+.row {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	gap: 2vw;
+	padding-bottom: 2vh;
+	height: fit-content;
+}
+
+#team h5 {
+	margin-bottom: 2vh;
+}
+
+.card {
+	padding: .6vh 1vh;
+	height: 100%;
+	box-shadow: 5px 10px 20px rgba(200, 200, 200, .6);
+}
+
+
+.who {
+	text-align: center;
+	background-image: url('/img/orlando.jpg');
+	height: 80vh;
+	opacity: .7;
+	padding-top: 15vh;
+	font-size: 1.6rem;
+	color: black;
+}
+
+.hero-big {
+	background-color: rgb(51, 46, 122);
+	opacity: .9;
+	padding: 1vh 2vh;
+	width: 60%;
+	margin: auto;
+	border-radius: 5px;
+	color: yellow;
+	transition: 1s ease-in;
+}
+
+.hero-big:hover {
+	animation: alternate-reverse;
+}
+
+.container p {
+	height: 18vh;
+}
+
+/* RESPONSIVE STYLES */
+@media screen and (max-width: 768px){
+	body{
+		width:100vw;
+	}
+	/* Home page */
+	nav{
+		width: 100vw;
+	}
+	nav ul{
+		display: flex;
+		flex-direction: column;
+		float: right;
+	}
+	nav i{
+		visibility: visible;
+	}
+	.carousel-image{
+		width: 100vw;
+		width: 100vh;
+	}
+	.hero-division{
+		width: 90%;
+	}
+	#about{
+		background-image: url('/img/img.jpg');
+	}
+	#about img{
+		visibility: hidden;
+	}
+	.content{
+		width: 90vw;
+		opacity: .8;
+	}
+
+	/* TOURS PAGE */
+	#p-6 div{
+		width: 100%;
+		flex-direction: column;
+	}
+	.cont-container{
+		margin: none;
+		padding: 0;
+		text-align: center;
+		justify-content: center;
+	}
+	.cont-container img{
+		width: 75%;
+		margin-top: 2vh;
+	}
+	.cont-container button{
+		width: 80%;
+		border: 1px s0lid red;
+		margin-right: 2vw;
+	}
+	/* About us page */
+	.who{
+		padding: 2vh;
+		font-size: 1.3rem;
+	}
+	.hero-big{
+		width: 80%;
+	}
+	.about-body h5{
+		font-size: 1rem;
+	}
+	.row{
+		display: grid;
+		grid-template-columns: auto;
+		gap: 2vh;
+		background-color: black;
+	}
+	.container p {
+		height: fit-content;
+	}
+	.tour-hr{
+		margin: 1vh;
+		width: 97%;
+	}
+	.card{
+		background-color: #AB9D9D;
 	}
 }
