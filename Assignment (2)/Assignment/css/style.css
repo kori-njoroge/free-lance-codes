@@ -35,7 +35,7 @@ nav a {
 	text-decoration: none;
 }
 
-.nav-icon{
+.nav-icon {
 	visibility: hidden;
 }
 
@@ -405,97 +405,147 @@ footer {
 }
 
 /* ACTIVITIES PAGE */
-.charts{
+.acti-body {
+	background-color: black;
+}
+
+.intro {
+	text-align: center;
+}
+
+.intro{
+	color: yellow;
+	width: 30%;
+	margin: auto;
+}
+
+.charts {
 	width: 100vw;
+	height: 50vh;
 	display: flex;
+	background-color:white;
+	border: 1px solid green;
+	/* width: 65%; */
+	width: fit-content;
+	margin: auto;
+	gap: 2vh;
+	padding: 1vh 1vw;
+	justify-content: space-between;
 }
-.charts div{
+
+.charts div {
 	flex: 50;
+	height: 100%;
+	width: fit-content;
 }
-.charts div canvas{
+
+.charts div canvas {
 	width: 7vw;
+	border: 1px solid black;
+	height: 50vh;
+}
+.line canvas{
+	height: 50vh;
 }
 
 
 /* RESPONSIVE STYLES */
-@media screen and (max-width: 768px){
-	body{
-		width:100vw;
-	}
-	/* Home page */
-	nav{
+@media screen and (max-width: 768px) {
+	body {
 		width: 100vw;
 	}
-	nav ul{
+
+	/* Home page */
+	nav {
+		width: 100vw;
+	}
+
+	nav ul {
 		display: flex;
 		flex-direction: column;
 		float: right;
 	}
-	nav i{
+
+	nav i {
 		visibility: visible;
 	}
-	.carousel-image{
+
+	.carousel-image {
 		width: 100vw;
 		width: 100vh;
 	}
-	.hero-division{
+
+	.hero-division {
 		width: 90%;
 	}
-	#about{
+
+	#about {
 		background-image: url('/img/img.jpg');
 	}
-	#about img{
+
+	#about img {
 		visibility: hidden;
 	}
-	.content{
+
+	.content {
 		width: 90vw;
 		opacity: .8;
 	}
 
 	/* TOURS PAGE */
-	#p-6 div{
+	#p-6 div {
 		width: 100%;
 		flex-direction: column;
 	}
-	.cont-container{
+
+	.cont-container {
 		margin: none;
 		padding: 0;
 		text-align: center;
 		justify-content: center;
 	}
-	.cont-container img{
+
+	.cont-container img {
 		width: 75%;
 		margin-top: 2vh;
 	}
-	.cont-container button{
+
+	.cont-container button {
 		width: 80%;
 		margin-right: 2vw;
 	}
+
 	/* About us page */
-	.who{
+	.who {
 		padding: 2vh;
 		font-size: 1.3rem;
 	}
-	.hero-big{
+
+	.hero-big {
 		width: 80%;
 	}
-	.about-body h5{
+
+	.about-body h5 {
 		font-size: 1rem;
 	}
-	.row{
+
+	.row {
 		display: grid;
 		grid-template-columns: auto;
 		gap: 2vh;
 		background-color: black;
 	}
+
 	.container p {
 		height: fit-content;
 	}
-	.tour-hr{
+
+	.tour-hr {
 		margin: 1vh;
 		width: 97%;
 	}
-	.card{
+
+	.card {
 		background-color: #AB9D9D;
 	}
 }
