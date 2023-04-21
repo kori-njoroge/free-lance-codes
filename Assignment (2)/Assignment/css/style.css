@@ -404,6 +404,19 @@ footer {
 	height: 18vh;
 }
 
+/* ACTIVITIES PAGE */
+.charts{
+	width: 100vw;
+	display: flex;
+}
+.charts div{
+	flex: 50;
+}
+.charts div canvas{
+	width: 7vw;
+}
+
+
 /* RESPONSIVE STYLES */
 @media screen and (max-width: 768px){
 	body{
